@@ -22,12 +22,12 @@
 <div class="container">
 <div class="main">
 <img src="logo.jpg" height=75 width=75 />
-<h2>Verify & Download Certificate</h2>
+<h2>Verify Techlance Employee</h2>
 <form id="form_id" method="post" name="myform">
-<label>Certificate ID:</label>
+<label>Employee ID:</label>
 <input id="username" name="username" type="text" /><br /><br />
 <input id="submit" onclick="validate()" type="button" value="Verify" />
-<h6>Use Your Valid Cerificate ID</h6>
+<h6>Use Your Valid Employee ID</h6>
 </form>
 </div>
 </div>
@@ -40,19 +40,19 @@ var attempt = 10; // Variable to count number of attempts.
 function validate(){
 var username = document.getElementById("username").value;
 
-if ( username == "IITAWPM0007" ){
-alert ("This certificate is generated for Dheekshanya  A R");
-window.location = "https://drive.google.com/file/d/1b43kyUM0kGuuNtjwJFM-70raZ3IVNtvl/view?usp=share_link"; // Redirecting to other page.
+if ( username == "CIA0209001" ){
+alert ("Welcome to Mr. dashboard");
+window.location = ""; // Redirecting to other page.
 return false;
 }
-else if ( username == "IITAWPM0006" ){
-alert ("This certificate is generated for Karan  M");
-window.location = "https://drive.google.com/file/d/1yX_ZmlWkgcAZfOWFGS6dTPP-7k5fW1cf/view?usp=share_link"; // Redirecting to other page.
+else if ( username == "CIA0209003" ){
+alert ("Welcome to Mr.Manikandan dashboard");
+window.location = "https://sites.google.com/view/techlance-cognivio/manikandan"; // Redirecting to other page.
 return false;
 }
-else if ( username == "IITAWPM0005" ){
-alert ("This certificate is generated for Nivedha  D");
-window.location = "https://drive.google.com/file/d/1o22R68CgFGeO-PDDWfyLmApZ8pao-eow/view?usp=share_link"; // Redirecting to other page.
+else if ( username == "CIA0209004" ){
+alert ("Welcome to Ms.Kabilarasi dashboard");
+window.location = "https://sites.google.com/view/techlance-cognivio/kabilarasi"; // Redirecting to other page.
 return false;
 }
   else if ( username == "IITAWPM0004" ){
@@ -137,6 +137,7 @@ alert("You have left "+attempt+" attempt;");
 if( attempt == 0){
 document.getElementById("username").disabled = true;
 document.getElementById("submit").disabled = true;
+alert ("Refresh the Page and try again!");
 return false;
 }
 }
